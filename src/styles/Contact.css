@@ -1,0 +1,41 @@
+.contact-container {
+  margin-bottom: 6rem;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: "Raleway", serif;
+}
+
+.contact-container_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container_header {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.025rem;
+  color: #1a1a1a;
+}
+
+.contact-container_description {
+  font-family: "Popins", sans-serif;
+  font-size: 0.875rem;
+  text-align: center;
+  margin: 2% 10%;
+}
+
+.contact-container_button {
+  height: 50px;
+  width: 200px;
+  border: 2px solid black;
+  background-color: transparent;
+}
+
+.contact-container_button:hover {
+  background-color: rgba(17, 17, 17, 0.4); /* gray-900 with 40% opacity */
+}
