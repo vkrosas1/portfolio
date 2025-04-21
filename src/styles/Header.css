@@ -73,8 +73,8 @@
   /* Inherits parent color */
 }
 
-.text-white {
-  color: white;
+.web-link {
+  color: black;
   /* Default text color */
 }
 
@@ -84,8 +84,8 @@
 }
 
 .hover-gray:hover {
-  color: #1a1a1a;
-  /* Dark gray on hover */
+  color: white;
+  /* White hover */
 }
 
 .resume-button {
@@ -100,7 +100,9 @@
 }
 
 .resume-button:hover {
+  background-color: #556f44;
   color: white; /* Changes text color on hover */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* phone styles */
