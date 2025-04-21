@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, Events, scrollSpy } from "react-scroll";
 import { CgMenuRight } from "react-icons/cg";
 import { UserData } from "../data/UserData";
-// import logo from "../Assets/images/logor.png";
-import "../styles/Header.css"; // Make sure to import your CSS file for styling
+import "../styles/Header.css";
 
 const Header = () => {
   const [isScrolling, setisScrolling] = useState(false);
@@ -50,7 +49,7 @@ const Header = () => {
           >
             <p
               className={
-                activeSection === "Home-section" ? "active" : "text-white"
+                activeSection === "Home-section" ? "active" : "web-link"
               }
             >
               Home
@@ -66,7 +65,7 @@ const Header = () => {
           >
             <p
               className={
-                activeSection === "About-section" ? "active" : "text-white"
+                activeSection === "About-section" ? "active" : "web-link"
               }
             >
               About
@@ -82,7 +81,7 @@ const Header = () => {
           >
             <p
               className={
-                activeSection === "Contact-section" ? "active" : "text-white"
+                activeSection === "Contact-section" ? "active" : "web-link"
               }
             >
               Contact
