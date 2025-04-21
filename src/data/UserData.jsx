@@ -20,17 +20,17 @@ export const UserData = {
   FooterLink: "https://www.linkedin.com/in/viviana-k-rosas/",
   socialMedia: [
     {
-      socialMediaName: "github",
+      socialMediaName: "Github",
       url: "https://github.com/vkrosas1",
       icon: "AiFillGithub",
     },
     {
-      socialMediaName: "linkedin",
+      socialMediaName: "LinkedIn",
       url: "https://www.linkedin.com/in/viviana-k-rosas/",
       icon: "FaLinkedinIn",
     },
     {
-      socialMediaName: "instagram",
+      socialMediaName: "Instagram",
       url: "https://www.instagram.com/outdo_or.potato/",
       icon: "AiFillInstagram",
     },
@@ -39,6 +39,6 @@ export const UserData = {
     strings: ["Front End Developer", "C# Software Developer", "Data Analyst"],
     autoStart: true,
     loop: true,
-    deleteSpeed: 30,
+    deleteSpeed: 50,
   },
 };

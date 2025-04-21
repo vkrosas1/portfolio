@@ -36,7 +36,10 @@ const Header = () => {
   };
 
   return (
-    <header className={`header-container ${isScrolling ? "sticky" : ""}`}>
+    <header
+      className={`header-container ${isScrolling ? "sticky" : ""}`}
+      role="banner"
+    >
       <nav className="nav-hidden-lg-block">
         <div className="div-cursor-pointer">
           <Link
@@ -47,13 +50,16 @@ const Header = () => {
             duration={500}
             to="Home-section"
           >
-            <p
+            <a
+              tabIndex="0"
+              href="#home"
               className={
                 activeSection === "Home-section" ? "active" : "web-link"
               }
+              aria-label="Navigate to the Home section"
             >
               Home
-            </p>
+            </a>
           </Link>
           <Link
             activeClass="active"
@@ -63,13 +69,16 @@ const Header = () => {
             duration={500}
             to="About-section"
           >
-            <p
+            <a
+              tabIndex="0"
+              href="#about"
               className={
                 activeSection === "About-section" ? "active" : "web-link"
               }
+              aria-label="Navigate to the About section"
             >
               About
-            </p>
+            </a>
           </Link>
           <Link
             activeClass="active"
@@ -79,20 +88,25 @@ const Header = () => {
             duration={500}
             to="Contact-section"
           >
-            <p
+            <a
+              tabIndex="0"
+              href="#contact"
               className={
                 activeSection === "Contact-section" ? "active" : "web-link"
               }
+              aria-label="Navigate to the Contact section"
             >
               Contact
-            </p>
+            </a>
           </Link>
           <div>
             <button
+              tabIndex="0"
               onClick={() => {
                 window.open(resumeUrl);
               }}
               className="resume-button"
+              aria-label="Open resume in a new tab"
             >
               Resume
             </button>
@@ -104,13 +118,18 @@ const Header = () => {
         {" "}
         {/* Show on small screens */}
         <button className="button-menu_small-screen" onClick={toggleMobileMenu}>
-          <CgMenuRight size={32} />
+          <CgMenuRight size={32} aria-hidden="true" />
         </button>
       </div>
 
       {/* Mobile menu */}
       {mobileMenuOpen && (
-        <nav className="nav-mobile-menu">
+        <nav
+          className="nav-mobile-menu"
+          role="navigation"
+          aria-modal="true"
+          aria-labelledby="mobile-menu-title"
+        >
           <div className={`navbar-bg__mobile`}>
             <Link
               activeClass="active"
@@ -120,7 +139,7 @@ const Header = () => {
               duration={500}
               to="Home-section"
             >
-              <p
+              <a
                 className={
                   activeSection === "Home-section"
                     ? "active-mobile"
@@ -129,7 +148,7 @@ const Header = () => {
                 onClick={toggleMobileMenu}
               >
                 Home
-              </p>
+              </a>
             </Link>
             <Link
               activeClass="active"
@@ -139,7 +158,7 @@ const Header = () => {
               duration={500}
               to="About-section"
             >
-              <p
+              <a
                 className={
                   activeSection === "About-section"
                     ? "active-mobile"
@@ -148,7 +167,7 @@ const Header = () => {
                 onClick={toggleMobileMenu}
               >
                 About
-              </p>
+              </a>
             </Link>
             <Link
               activeClass="active"
@@ -158,7 +177,7 @@ const Header = () => {
               duration={500}
               to="Contact-section"
             >
-              <p
+              <a
                 className={
                   activeSection === "Contact-section"
                     ? "active-mobile"
@@ -167,7 +186,7 @@ const Header = () => {
                 onClick={toggleMobileMenu}
               >
                 Contact
-              </p>
+              </a>
             </Link>
             <div>
               <button

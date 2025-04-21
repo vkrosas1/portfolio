@@ -1,11 +1,7 @@
 import React from "react";
 import TypewriterText from "../components/TypewriterText";
 import { UserData } from "../data/UserData";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import "../styles/Home.css";
 import imagedeveloper from "../assets/images/homeImage.jpg";
@@ -39,6 +35,7 @@ function Home() {
                 <button
                   className="home-layout_social-media-button"
                   key={index}
+                  aria-label={`Open ${data.socialMediaName} profile`}
                   onClick={() => window.open(data.url)}
                 >
                   <IconComponent className="icon" />
