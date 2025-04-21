@@ -39,8 +39,6 @@
 }
 
 .contact-container_button:hover {
-  /* color: white; 
-  background-color: rgba(17, 17, 17, 0.4); */
   background-color: #044389;
-  color: white; /* Changes text color on hover */
+  color: white;
 }
