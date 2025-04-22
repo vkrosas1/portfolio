@@ -38,7 +38,7 @@ function Home() {
                   aria-label={`Open ${data.socialMediaName} profile`}
                   onClick={() => window.open(data.url)}
                 >
-                  <IconComponent className="icon" />
+                  <IconComponent aria-hidden="true" className="icon" />
                 </button>
               );
             })}
