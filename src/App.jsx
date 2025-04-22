@@ -9,7 +9,6 @@ import React, { useState } from "react";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Layout from "./pages/Layout";
-import NotFound from "./pages/NotFound";
 
 function FadeInSection(props) {
   const [isVisible, setVisible] = React.useState(false);
@@ -42,7 +41,6 @@ function App() {
               <Route path="/" element={<Layout />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/*" element={<NotFound />} />
             </Routes>
           </div>
         </Router>

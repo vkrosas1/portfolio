@@ -8,14 +8,9 @@ function Footer() {
   return (
     <div className="footer-container">
       <div className="footer-container_text">Designed & Built by</div>
-      <div
-        className="footer-container_text-link"
-        onClick={() => {
-          window.open(FooterLink);
-        }}
-      >
+      <a className="footer-container_text-link" href={FooterLink}>
         vivianarosas
-      </div>
+      </a>
     </div>
   );
 }

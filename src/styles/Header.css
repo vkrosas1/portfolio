@@ -71,11 +71,13 @@
   /* Example styling for active state */
   color: inherit;
   /* Inherits parent color */
+  text-decoration: none;
 }
 
 .web-link {
   color: black;
   /* Default text color */
+  text-decoration: none;
 }
 
 .hover-gray {
