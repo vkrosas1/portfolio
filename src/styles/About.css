@@ -1,8 +1,7 @@
 .about-container {
-  /*margin-bottom: 6rem; */
-  height: auto;
-  width: fit-content;
-  padding: 10%;
+  height: 100vh;
+  width: 100%;
+  padding: 0% 10%;
 }
 
 .about-container_layout {

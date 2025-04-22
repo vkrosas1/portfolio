@@ -16,24 +16,26 @@ function Home() {
   };
 
   return (
-    <div className="home-layout">
-      <div className="home-layout_content">
-        <div className="home-layout_img-container">
-          <img className="home-layout_img" src={imagedeveloper} alt="" />
+    <div className="home-container">
+      <div className="home-container_layout">
+        <div className="home-container_img-container">
+          <img className="home-container_img" src={imagedeveloper} alt="" />
         </div>
-        <div className="home-layout_greeting-container">
-          <h2 className="home-layout_greeting_content">
+        <div className="home-container_greeting-container">
+          <h2 className="home-container_greeting_content">
             Hello <span className="wave">👋</span>
           </h2>
-          <h2 className="home-layout_greeting_content">I'm {UserData.name}</h2>
+          <h2 className="home-container_greeting_content">
+            I'm {UserData.name}
+          </h2>
           <TypewriterText />
 
-          <div className="home-layout_social-media-container">
+          <div className="home-container_social-media-container">
             {socialMedia.map((data, index) => {
               const IconComponent = socialMediaIcons[data.icon];
               return (
                 <button
-                  className="home-layout_social-media-button"
+                  className="home-container_social-media-button"
                   key={index}
                   aria-label={`Open ${data.socialMediaName} profile`}
                   onClick={() => window.open(data.url)}
