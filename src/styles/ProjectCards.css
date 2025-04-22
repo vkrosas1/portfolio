@@ -1,0 +1,31 @@
+.project-cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  width: fit-content;
+}
+
+.project-card {
+  margin: 1rem;
+  max-width: 15rem;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 0.5rem;
+}
+
+.project-badge-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.project-badge {
+  display: flex;
+  margin: 0.2rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: normal;
+}

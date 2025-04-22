@@ -4,6 +4,7 @@ import { UserData } from "../data/UserData";
 import { skillsData } from "../data/SkillsData";
 import { skillsImage } from "../utils/SkillsToImage";
 import AboutImage from "../assets/images/AboutImage.jpeg";
+import ProjectCards from "../components/ProjectCards";
 import "../styles/About.css";
 
 function About() {
@@ -30,6 +31,7 @@ function About() {
             </div>
           ))}
         </div>
+        <ProjectCards />
       </div>
     </div>
   );

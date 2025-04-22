@@ -1,12 +1,11 @@
-.home-layout {
+.home-container {
   height: auto;
   width: 100%;
-  margin-bottom: 0;
   height: 100vh;
   align-content: center;
 }
 
-.home-layout_content {
+.home-container_layout {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -16,24 +15,24 @@
 }
 /*to-do: the small screen */
 
-.home-layout_greeting-container {
+.home-container_greeting-container {
   width: 100%;
 }
 
-.home-layout_greeting_content {
+.home-container_greeting_content {
   font-size: 1.5rem;
   font-weight: semi-bold;
   line-height: 1.25;
   color: #1a202c;
 }
 
-.home-layout_social-media-container {
+.home-container_social-media-container {
   margin-top: 1rem;
   gap: 2rem;
   display: flex;
 }
 
-.home-layout_social-media-button {
+.home-container_social-media-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,15 +42,15 @@
   cursor: pointer;
 }
 
-.home-layout_social-media-button:hover {
+.home-container_social-media-button:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-.home-layout_img-container {
+.home-container_img-container {
   margin: 5rem;
 }
 
-.home-layout_img {
+.home-container_img {
   max-width: 550px;
   background-size: cover;
   background-position: center;
