@@ -16,7 +16,7 @@ export const UserData = {
     </>
   ),
   resumeUrl:
-    "https://drive.google.com/file/d/1uvA8QtvW_DXZvhIUnghonJgJm74MeDBW/view?usp=drive_link",
+    "https://drive.google.com/file/d/1H-yFxLIO1pytSk_r-6JABCsnmbLkeYHC/view?usp=sharing",
   FooterLink: "https://www.linkedin.com/in/viviana-k-rosas/",
   socialMedia: [
     {
