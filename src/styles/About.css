@@ -1,20 +1,33 @@
 .about-container {
-  height: 100vh;
+  height: auto;
   width: 100%;
   padding: 0% 10%;
 }
 
 .about-container_layout {
-  /*margin: auto; 
-  padding: 1rem;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  background-color: transparent;
-  border-radius: 0.5rem; */
   display: grid;
   justify-content: space-between;
   grid-template-rows: auto auto; /* Two rows */
   grid-template-columns: auto auto; /* Two columns in the first row */
   gap: 2rem; /* Add spacing between grid items */
+}
+
+@media (max-width: 768px) {
+  .about-container_layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Adjust spacing for flex layout */
+  }
+
+  .about-container_img {
+    order: -1;
+    margin: 2rem auto;
+  }
+
+  .about-container_text,
+  .about_skills {
+    width: 100%; /* Ensure full width for each section */
+  }
 }
 
 .about-container_text {

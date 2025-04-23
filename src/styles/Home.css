@@ -6,17 +6,19 @@
 }
 
 .home-container_layout {
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  padding: 5% 10%;
+  /*width: 80%; 
+  margin: 0 auto; */
 }
 /*to-do: the small screen */
 
 .home-container_greeting-container {
   width: 100%;
+  margin: 5rem;
 }
 
 .home-container_greeting_content {
@@ -47,7 +49,6 @@
 }
 
 .home-container_img-container {
-  margin: 5rem;
 }
 
 .home-container_img {

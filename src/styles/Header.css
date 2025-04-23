@@ -4,24 +4,25 @@
   z-index: 50; /* z-index for layering */
   display: flex; /* Flexbox layout */
   width: 100%; /* full width */
+  align-items: center; /* vertically center */
   justify-content: flex-end; /* aligns items to the right */
-  align-items: center; /* vertical centering */
   font-size: 1rem; /* base font size (16px usually) */
   transition: all 0.2s ease-in-out; /* smooth transitions */
 
   /* Padding for small screens */
-  /* padding-left: 1rem; */
-  padding-right: 1rem;
+  @media (min-width: 640px) {
+    padding-left: 1rem; /* sm:px-4 */
+    padding-right: 1rem;
+  }
 
   /* Padding for large screens */
   @media (min-width: 1024px) {
-    /* padding-left: 7rem; */
-    padding-right: 7rem;
-    padding-top: 0.5rem;
+    /*padding-top: 0.5rem;*/
+    padding-right: 5rem;
+    padding-top: 0.5rem; /* lg:pt-2 */
   }
 }
 
-/* Styles for <nav> */
 .nav-hidden-lg-block {
   display: none;
   /* Hidden by default */
@@ -30,42 +31,30 @@
 @media (min-width: 1024px) {
   .nav-hidden-lg-block {
     display: block;
-    margin-right: 5%;
-    /* Visible for large screens */
   }
 }
 
-/* Styles for <div> */
 .div-cursor-pointer {
-  cursor: pointer;
-  /* Pointer cursor */
-  display: flex;
-  /* Flexbox layout */
-  align-items: center;
-  /* Vertical alignment */
-  gap: 3rem;
-  /* Space between items */
+  cursor: pointer; /* Pointer cursor */
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Vertical alignment */
+  gap: 2rem; /* Space between items */
 }
 
 @media (min-width: 640px) {
   .div-cursor-pointer.sm {
-    flex-direction: column;
-    /* Stack items vertically */
-    gap: 3rem;
-    /* Adjust gap for small screens */
+    flex-direction: column; /* Stack items vertically */
+    gap: 2rem; /* Adjust gap for small screens */
   }
 }
 
 @media (min-width: 1024px) {
   .div-cursor-pointer.lg {
-    flex-direction: row;
-    /* Align items horizontally */
-    gap: 1.5rem;
-    /* Adjust gap for large screens */
+    flex-direction: row; /* Align items horizontally */
+    gap: 1.5rem; /* Adjust gap for large screens */
   }
 }
 
-/* Styles for <p> inside <Link> */
 .active {
   font-weight: bold;
   /* Example styling for active state */
@@ -75,19 +64,16 @@
 }
 
 .web-link {
-  color: black;
-  /* Default text color */
+  color: black; /* Default text color */
   text-decoration: none;
 }
 
 .hover-gray {
-  transition: color 0.2s ease-in-out;
-  /* Smooth hover effect */
+  transition: color 0.2s ease-in-out; /* Smooth hover effect */
 }
 
 .hover-gray:hover {
-  color: white;
-  /* White hover */
+  color: white; /* White hover */
 }
 
 .resume-button {
@@ -126,6 +112,8 @@
   cursor: pointer; /* Pointer cursor on hover */
   outline: none; /* Removes outline on focus */
   transition: color 0.2s ease-in-out; /* Smooth hover effect */
+  background-color: transparent;
+  border: 1.25rem solid transparent;
 }
 
 .button-menu_small-screen:hover {
